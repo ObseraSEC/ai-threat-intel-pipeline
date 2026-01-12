@@ -1,9 +1,6 @@
 
-        Subject: URGENT: Q4 Invoice Overdue - Action Required
-        From: billing@vendor-support-portal.net (Spoofing internal domain)
-        Target: finance-dept@obserasec.com
-        Analysis:
-        Email contained a PDF with embedded javascript dropper.
-        Malicious URL: http://vendor-support-portal.net/login.php?ref=invoice
-        Payload: Dridex Banking Trojan
+        Subject: URGENT: Invoice Overdue.
+        From: billing@vendor-support-portal.net.
+        Malicious URL: http://vendor-support-portal.net/login.php?ref=invoice.
+        Payload: Dridex.
         

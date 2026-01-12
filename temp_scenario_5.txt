@@ -1,0 +1,5 @@
+
+        Finding: EC2 instance i-0123456789abcdef0 querying crypto mining pool.
+        Domain: xmr.pool.minergate.com.
+        IP: 18.22.33.44.
+        

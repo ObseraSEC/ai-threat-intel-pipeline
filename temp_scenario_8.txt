@@ -1,0 +1,7 @@
+
+        Actor: FANCY BEAR (APT28).
+        Target: Government Agency.
+        Implant: XAgent.
+        C2 IP: 89.44.33.22.
+        Domain: nato-defense-portal.com.
+        

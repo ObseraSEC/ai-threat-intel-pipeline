@@ -1,12 +1,7 @@
 
-        Alert (AA26-044A): BlackCat Ransomware Affiliates Targeting Critical Infrastructure
-        The FBI and CISA have observed BlackCat (ALPHV) affiliates targeting the energy sector.
-        Indicators of Compromise:
-        - IP: 149.102.10.11 (C2 Server)
-        - IP: 198.51.100.2 (Exfiltration Node)
+        Alert (AA26-044A): BlackCat Ransomware Affiliates Targeting Energy Sector.
+        Indicators:
+        - IP: 149.102.10.11
         - Domain: alphv-pay-site.onion
-        - Hash: 5e884898da28047151d0e56f8dc6292773603d0d6aabbdd62a11ef721d1542d8
-        Techniques:
-        - T1190 - Exploit Public-Facing Application
-        - T1059 - Command and Scripting Interpreter: PowerShell
+        Techniques: PowerShell, T1190.
         

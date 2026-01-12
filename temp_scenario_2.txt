@@ -1,10 +1,6 @@
 
-        [SALE] 50,000 Credit Cards - Chase / BofA
-        Seller: CardMaster99
-        Price: 0.05 BTC
-        Sample Data:
-        - 4147 2022 3030 1010 | Exp 09/27 | CVV 992
-        - Name: Michael Smith | Zip: 90210
-        Contact me on Jabber: cardmaster@jabber.calyxinstitute.org
-        Forum: BreachForums v3
+        [SALE] 50,000 Credit Cards - Chase / BofA.
+        Seller: CardMaster99.
+        Sample: 4147 2022 3030 1010 | Exp 09/27.
+        Contact: cardmaster@jabber.calyxinstitute.org.
         
