@@ -27,6 +27,10 @@ services:
     environment:
       - OLLAMA_BASE_URL=http://100.119.58.75:11434
       - OLLAMA_MODEL=llama3.1:8b
+      - OPENSEARCH_HOST=10.0.15.2
+      - OPENSEARCH_PORT=9200
+      - OPENSEARCH_USER=admin
+      - OPENSEARCH_PASSWORD=0eW3sBa6F7KqGzdneEt8fQe5qCGJfCUy
     labels:
       - "traefik.enable=true"
       - "traefik.http.routers.intel-normalizer.rule=Host(`intel.100.107.166.16.sslip.io`)"

@@ -1,0 +1,11 @@
+
+        Campaign: Operation "Silent Dragon"
+        Actor: APT41
+        Targets: Healthcare providers in SE Asia
+        Modus Operandi: Supply chain attack via compromised software update mechanism of 'HealthCure ERP'.
+        C2 Infrastructure:
+        - update-healthcure.com
+        - 45.33.22.11
+        - 103.11.22.33
+        Status: Active infection observed.
+        

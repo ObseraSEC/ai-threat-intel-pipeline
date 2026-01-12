@@ -1,0 +1,10 @@
+
+        Incident: Insider Data Exfiltration [DETECTED]
+        User: sarah.jones@corp-example.internal
+        Date: 2026-01-12 14:00 UTC
+        Details:
+        User attempted to upload 450MB of manufacturing schematics to 'dropbox-personal-upload.com'.
+        DLP Blocked the transaction.
+        IP Address: 10.20.1.55 (Internal Workstation)
+        Action Taken: Account suspended, device isolated.
+        
