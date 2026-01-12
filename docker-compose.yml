@@ -1,0 +1,45 @@
+services:
+  unstructured-api:
+    image: downloads.unstructured.io/unstructured-io/unstructured-api:latest
+    container_name: intel-unstructured-api
+    restart: unless-stopped
+    expose:
+      - "8000"
+    environment:
+      - PORT=8000
+    labels:
+      - "traefik.enable=true"
+      - "traefik.http.routers.intel-unstructured.rule=Host(`unstructured.100.107.166.16.sslip.io`)"
+      - "traefik.http.routers.intel-unstructured.entrypoints=http,https"
+      - "traefik.http.services.intel-unstructured.loadbalancer.server.port=8000"
+    networks:
+      - coolify
+      - intel-pipeline-network
+
+  intel-normalizer:
+    build:
+      context: .
+      dockerfile: intel-Dockerfile
+    container_name: intel-ai-normalizer
+    restart: unless-stopped
+    expose:
+      - "5050"
+    environment:
+      - OLLAMA_BASE_URL=http://100.119.58.75:11434
+      - OLLAMA_MODEL=llama3.1:8b
+    labels:
+      - "traefik.enable=true"
+      - "traefik.http.routers.intel-normalizer.rule=Host(`intel.100.107.166.16.sslip.io`)"
+      - "traefik.http.routers.intel-normalizer.entrypoints=http,https"
+      - "traefik.http.services.intel-normalizer.loadbalancer.server.port=5050"
+    depends_on:
+      - unstructured-api
+    networks:
+      - coolify
+      - intel-pipeline-network
+
+networks:
+  intel-pipeline-network:
+    name: intel-pipeline-network
+  coolify:
+    external: true
